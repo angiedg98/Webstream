@@ -1,12 +1,37 @@
+
+
 .header {
-    height: 100%;
-    background-color: antiquewhite;
-    position: absolute;
+    height: 100vh;
+    background-color: #2A362D;
 }
 
 .head {
-    background-color: violet;
-    width: 500px;
-    margin: auto 0;
-    position: relative;
+    height: 60%;
+    width: 150px;
+    background-color: #39483D;
+    margin-left: 200px;
+    margin-top: 20vh;
+    float:left;
+    border-top-left-radius: 10px;
 }
+
+.feature {
+    height: 80%;
+    width: 600px;
+    background-color: white;
+    margin-top: 10vh;
+    float: left;
+    border-radius: 10px;
+}
+
+.form {
+    height: 60%;
+    width: 720px;
+    background-color: #39483D;
+    margin-top: 20vh;
+    float: left;
+    margin-right: 200px;
+    border-top-right-radius: 10px;
+}
+
+#11C6B3
