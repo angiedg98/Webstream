@@ -9,28 +9,34 @@
   margin-left: 200px;
   margin-top: 15vh;
   float: left;
-  border-top-left-radius: 10px; }
+  border-top-left-radius: 10px;
+  box-shadow: -8px -7px 15px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -8px -7px 15px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -8px -7px 15px 1px rgba(0, 0, 0, 0.3); }
 
 .feature {
-  height: 90%;
-  width: 600px;
+  height: 80%;
+  width: 700px;
   background-color: #11C6B3;
-  margin-top: 5vh;
+  margin-top: 10vh;
   float: left;
   border-radius: 10px;
   display: block; }
 
 .form {
   height: 70%;
-  width: 700px;
+  width: 600px;
   margin-top: 15vh;
   float: left;
   border-top-right-radius: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 9px -7px 15px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 9px -7px 15px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 9px -7px 15px 1px rgba(0, 0, 0, 0.3); }
 
 .form-container {
   height: 100%;
-  width: 1400px;
+  width: 1200px;
   background-image: linear-gradient(#222c25, #222c2500);
   float: left;
   margin-right: 200px;
@@ -53,7 +59,9 @@
 .signup {
   padding-top: 30px;
   color: white;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold; }
 
 form {
   width: 50%;
@@ -70,22 +78,25 @@ form {
 label {
   letter-spacing: 2px;
   padding-top: 20px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Raleway', sans-serif; }
 
 .label-text {
-  color: #ffffff;
+  color: #ffffff7e;
   cursor: text;
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
   transform: translateY(-30px);
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  font-family: 'Raleway', sans-serif; }
 
 input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px solid #d3d3d3;
-  color: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
   font-size: 36px;
   letter-spacing: -1px;
   outline: 0;
@@ -99,9 +110,11 @@ input {
     input:focus + .label-text {
       color: #ffffff;
       font-size: 13px;
+      font-family: 'Raleway', sans-serif;
       transform: translateY(-60px); }
       input:focus + .label-text:valid + .label-text {
         font-size: 13px;
+        font-family: 'Raleway', sans-serif;
         transform: translateY(-74px); }
 
 .button {
@@ -110,6 +123,8 @@ input {
   color: black;
   cursor: pointer;
   font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   padding: 15px 30px;
   width: 200px;
   text-transform: uppercase;
