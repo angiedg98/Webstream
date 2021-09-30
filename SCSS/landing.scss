@@ -32,7 +32,7 @@
     margin-top: 15vh;
     float: left;
     border-top-right-radius: 10px;
-    overflow: hidden;
+    // overflow: hidden;
     box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
     -webkit-box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
     -moz-box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
@@ -43,23 +43,13 @@
     width: 1200px;
     background-color: #222c25;
     float: left;
-    margin-left:0;
     margin-right: 200px;
     border-top-right-radius: 10px;
 
 }
 
-.form-container-active {
-    height: 100%;
-    width: 1200px;
-    background-color: #222c25;
-    margin-left: 0;
-    float: right;
-    margin-right: 200px;
-    border-top-right-radius: 10px;
-}
 
-// Feature styling
+// navigations styling
 
 .logo {
     height: 33.3%;
@@ -109,19 +99,11 @@
 form {
     width: 50%;
     text-align: center;
-    display: block;
     height: 100%;
+    background-color: blue;
+    float:left;
 }
 
-.signin {
-    float: left;
-
-}
-
-.login {
-    float: left;
-
-}
 
 label {
   letter-spacing: 2px;
@@ -141,7 +123,7 @@ label {
     font-family: 'Raleway', sans-serif;
   }
 
-  input {
+input {
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid #d3d3d3;
@@ -154,24 +136,24 @@ label {
     text-align: center;
     transition: all 0.3s;
     width: 200px;
-  
-    
+
+
     &:focus {
-      max-width: 100%;
-      width: 400px;
-    
+        max-width: 100%;
+        width: 400px;
+
 
     & + .label-text {
     color: #ffffff;
     font-size: 13px;
     font-family: 'Raleway', sans-serif;
     transform:(translateY(-60px));
-    
-      
+
+        
     &:valid + .label-text {
-      font-size: 13px;
-      font-family: 'Raleway', sans-serif;
-      transform:(translateY(-74px));
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        transform:(translateY(-74px));
   
 }
 }
