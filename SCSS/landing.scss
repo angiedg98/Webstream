@@ -1,12 +1,12 @@
 .header {
     height: 100vh;
-    background-color: #2A362D;
+
 }
 
 .head {
     height: 70%;
     width: 150px;
-    background-image: linear-gradient( #222c25, #222c2500);
+    background-color: #222c25;
     margin-left: 200px;
     margin-top: 15vh;
     float:left;
@@ -19,7 +19,7 @@
 .feature {
     height: 80%;
     width: 700px;
-    background-color: #11C6B3;
+    background-color: #ffffff;
     margin-top: 10vh;
     float: left;
     border-radius: 10px;
@@ -41,11 +41,22 @@
 .form-container {
     height: 100%;
     width: 1200px;
-    background-image: linear-gradient( #222c25, #222c2500);
+    background-color: #222c25;
     float: left;
+    margin-left:0;
     margin-right: 200px;
     border-top-right-radius: 10px;
 
+}
+
+.form-container-active {
+    height: 100%;
+    width: 1200px;
+    background-color: #222c25;
+    margin-left: 0;
+    float: right;
+    margin-right: 200px;
+    border-top-right-radius: 10px;
 }
 
 // Feature styling
@@ -54,16 +65,35 @@
     height: 33.3%;
     width: 100%;
     padding-top: 25px;
+    cursor: pointer;
 }
 
 .login {
     height: 33.3%;
     width: 100%;
+    padding-top: 60px;
+    padding-left: 35px;
+    cursor: pointer;
 }
 
 .create {
     height: 33.3%;
     width: 100%;
+    padding-top: 60px;
+    padding-left: 40px;
+    cursor: pointer;
+    transition: all ease-out 800ms;
+    
+}
+
+.create-active {
+    height: 33.3%;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 40px;
+    cursor: pointer;
+    border-left: 3px solid #11C6B3;
+    transition: all ease-out 800ms;
 }
 
 /* form styling */
@@ -168,4 +198,112 @@ label {
     color: #ffffff;
     outline: 0;
 }
+}
+
+// testing particles
+
+/* Config */
+$color-particle: #e3f0e5;
+$spacing: 2560px;
+$time-1: 60s;
+$time-2: 120s;
+$time-3: 180s;
+$time-4: 200s;
+
+/* mixins */
+@function particles($max) {
+  $val: 0px 0px $color-particle;
+  @for $i from 1 through $max {
+    $val: #{$val}, random($spacing)+px random($spacing)+px $color-particle;
+  }
+  @return $val;
+}
+
+@mixin particles($max) {
+  box-shadow: particles($max);
+  border-radius: 50%;
+}
+
+/* Styles */
+
+
+
+.page-bg, .animation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page-bg {
+    background-color: #2A362D;
+  background-size: cover;
+  z-index: -1;
+}
+
+.particle, .particle:after {
+  background: transparent;
+}
+
+.particle:after {
+  position: absolute;
+  content: "";
+  top: $spacing;
+}
+
+.particle-1 {
+  animation: animParticle $time-1 linear infinite;
+  @include particles(1000);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-1:after {
+  @include particles(900);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-2 {
+  animation: animParticle $time-2 linear infinite;
+  @include particles(800);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-2:after {
+  @include particles(500);
+  height: 3px;
+  width: 3px;
+}
+
+.particle-3:after {
+  @include particles(1100);
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+
+.particle-4 {
+  animation: animParticle $time-4 linear infinite;
+  @include particles(1200);
+  height: 1px;
+  width: 1px;
+}
+
+.particle-4:after {
+  @include particles(700);
+  height: 1px;
+  width: 1px;
+}
+
+@keyframes animParticle {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY($spacing * -1);
+  }
 }
