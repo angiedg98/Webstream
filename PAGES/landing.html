@@ -32,13 +32,33 @@
             <div class="form">
                 <div class="form-container">
                     <form autocomplete="on">
-                        <h3 class="title" >Sign Up</h3>
-                        <input type="text" placeholder="First Name" style="margin-bottom: 3%;" required>
-                        <input type="text" placeholder="Last Name" style="margin-bottom: 3%;" required>
-                        <input type="email" placeholder="Your Email" style="margin-bottom: 3%;" required>
-                        <input type="password" id="pass1" placeholder="Select a Password" pattern="(?=.*/d) (?=.*/[a-z]) (?=.*/[A-Z]).{8,}" style="margin-bottom: 3%;" required  title="Password must be a minimum of 8 characters including: digits, lowercase and uppercase">
-                        <input type="password" id="pass2" placeholder="Confirm Password" style="margin-bottom: 3%;" required>
-                        <input type="submit" class="btn" value="Submit Form">
+                        <h3 class="signup">Sign up</h3>
+                        <label>
+                            <input type="text" required />
+                            <div class="label-text">First name</div>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="text" required />
+                            <div class="label-text">Last name</div>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="text" required />
+                            <div class="label-text">Email address</div>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="text" required />
+                            <div class="label-text">Select password</div>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="text" required />
+                            <div class="label-text">Confirm password</div>
+                        </label>
+                        <br>
+                          <button class="button">Sign up</button>
                     </form>
                 </div><!--form-container-->
 
