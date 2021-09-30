@@ -26,7 +26,7 @@
 
 .form {
     height: 60%;
-    width: 720px;
+    width: 1400px;
     background-color: #39483D;
     margin-top: 20vh;
     float: left;
@@ -34,4 +34,34 @@
     border-top-right-radius: 10px;
 }
 
-#11C6B3
+/* form styling */
+
+.title {
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.form-container{
+    width: 100%;
+    height: 60vh;
+    background-color: #39483D
+}
+
+form {
+    width: 50%;
+    margin-left: 200px;
+    float: left;
+}
+
+
+input {
+    -webkit-appearance: none;
+    height: 35px;
+    appearance: none;
+    outline: 0;
+    border: 1px solid fade(white, 40%);
+    background-color: fade(white, 20%);
+    width: 300px;
+    display: block;
+}
+

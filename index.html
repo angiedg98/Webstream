@@ -32,7 +32,18 @@
                 </div><!--feature block-->
 
                 <div class="form">
-                    hello
+                    <div class="form-container">
+                        <form autocomplete="on">
+                            <h3 class="title" >Sign Up</h3>
+                            <input type="text" placeholder="First Name" style="margin-bottom: 3%;" required>
+                            <input type="text" placeholder="Last Name" style="margin-bottom: 3%;" required>
+                            <input type="email" placeholder="Your Email" style="margin-bottom: 3%;" required>
+                            <input type="password" id="pass1" placeholder="Select a Password" pattern="(?=.*/d) (?=.*/[a-z]) (?=.*/[A-Z]).{8,}" style="margin-bottom: 3%;" required  title="Password must be a minimum of 8 characters including: digits, lowercase and uppercase">
+                            <input type="password" id="pass2" placeholder="Confirm Password" style="margin-bottom: 3%;" required>
+                            <input type="submit" class="btn" value="Submit Form">
+                        </form>
+                    </div><!--form-container-->
+
                 </div><!--form section-->
                 
             </div><!--header-->
