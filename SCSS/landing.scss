@@ -6,7 +6,7 @@
 .head {
     height: 70%;
     width: 150px;
-    background-color: #39483D;
+    background-image: linear-gradient( #222c25, #222c2500);
     margin-left: 200px;
     margin-top: 15vh;
     float:left;
@@ -16,27 +16,54 @@
 .feature {
     height: 90%;
     width: 600px;
-    background-color: white;
+    background-color: #11C6B3;
     margin-top: 5vh;
     float: left;
     border-radius: 10px;
+    display: block;
 }
 
 .form {
     height: 70%;
-    width: 1400px;
-    background-color: #39483D;
+    width: 700px;
     margin-top: 15vh;
+    float: left;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    height: 100%;
+    width: 1400px;
+    background-image: linear-gradient( #222c25, #222c2500);
     float: left;
     margin-right: 200px;
     border-top-right-radius: 10px;
+}
+
+// Feature styling
+
+.logo {
+    height: 33.3%;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.login {
+    height: 33.3%;
+    width: 100%;
+}
+
+.create {
+    height: 33.3%;
+    width: 100%;
 }
 
 /* form styling */
 
 .signup {
     padding-top: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-bottom: 20px;
 }
 
@@ -44,6 +71,17 @@ form {
     width: 50%;
     text-align: center;
     display: block;
+    height: 100%;
+}
+
+.signin {
+    float: left;
+
+}
+
+.login {
+    float: left;
+
 }
 
 label {
@@ -53,7 +91,7 @@ label {
 } 
 
 .label-text {
-    color: #9B9B9B;
+    color: #ffffff;
     cursor: text;
     font-size: 12px;
     line-height: 20px;
@@ -66,7 +104,7 @@ label {
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid #d3d3d3;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 36px;
     letter-spacing: -1px;
     outline: 0;
@@ -82,7 +120,7 @@ label {
     
 
     & + .label-text {
-    color: #F0F0F0;
+    color: #ffffff;
     font-size: 13px;
     transform:(translateY(-60px));
     
@@ -98,11 +136,10 @@ label {
       
 .button {
     margin-top: 20px;
-    background-color: #ffffff;
+    background-color: white;
     color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 20px;
-    margin-top: 20px;
     padding: 15px 30px;
     width: 200px;
     text-transform: uppercase;
@@ -111,8 +148,8 @@ label {
 
 
   &:hover, &:focus {
-    background-color: white;
-    color: #333333;
+    background-color: #11C6B3;
+    color: #ffffff;
     outline: 0;
 }
 }
