@@ -1,0 +1,126 @@
+
+
+.header {
+    height: 100vh;
+    background-color: #222c25;
+}
+/* MAIN CONTAINER OF CONTENT */
+
+.slider{
+height:90vh;
+width:100%;
+background-color:white;
+color:black;
+font-family: sans-serif;
+text-align:center;
+padding-top:40vh;
+}
+/* SLIDER CONTAINE/WHERE THE SLIDER WILL BE WHEN JS IS IMPLEMENTED */
+
+.RecFilms{
+    height:400px;
+    width:100%;
+    background-color:#222c25;
+}
+/* RECOMMENDED FILMS CONTAINER */
+
+.RecSpacerV{
+    height:25px;
+    width:100%;
+    background-color:#222c25;
+}
+/* VERTICAL SPACER BETWEEN CONTENT AND RECOMMENDED FILMS TITLE BOX */
+
+.RecTitle{
+    height:50px;
+    width:100%;
+    background-color:#222c25;
+}
+/* TITLE BOX OF THE RECOMMENDED FILMS */
+
+.RecGutter{
+    height:300px;
+    float:left;
+}
+/* RECOMMENDED FILMS SIDE GUTTER/SPACER */
+
+.RecContent{
+    height:300px;
+    background-color:#222c25;
+    float:left;
+}
+/* RECOMMENDED FILMS CONTENT BOX */
+
+.RecFilm{
+    height:300px;
+    background-color:white;
+    float:left;
+    border-radius:5px;
+}
+/* RECOMMENDED FILM CARD */
+
+.RecMleft{
+    margin-left:6.5%;
+    float:left;
+}
+/* RECOMMENDED FILM MARGIN LEFT */
+
+.RecMright{
+    margin-right:7%;
+    float:left;
+}
+/* RECOMMENDED FILM MARGIN RIGHT */
+
+.RecTitleGutter{
+    height:50px;
+    float:left;
+}
+/* RECOMMENDED FILM TITLE BOX GUTTER/SPACER */
+
+.RecTitleText{
+    height:50px;
+    float:left;
+    font-family:sans-serif;
+    color:white;
+    padding-left:5.5%;
+    font-size:30px;
+}
+/* RECOMMENDED FILMS TITLE BOX TEXT */
+
+.RecTitleContent{
+    height:50px;
+    background-color:#222c25;
+    margin: 0 auto;
+}
+/* RECOMMENDED FILM TITLES */
+
+.RecFilmT{
+    height:50px;
+    float:left;
+    text-align:center;
+    padding-top:15px;
+    font-family: sans-serif;
+    color:white;
+    font-size:15px;
+}
+/* RECOMMENDED FILM CARD TITLE BOX BELOW */
+
+.RecTitleBoxes{
+    background-color:#222c25;
+    width:100%;
+    height:50px;
+}
+/* RECOMMENDED FILMS TITLE BOXES CONTAINER */
+
+.ContentSplitSpacer{
+    height:50px;
+    width:100%;
+    background-color:#222c25;
+}
+/* CONTENT SPLITTER AID/ GAP BETWEEN COLOUR SHIFTS TO SPLIT CONTENT */
+
+.movieLibraryContainer{
+    height:500px;
+    width:100%;
+    background-color:#39483D;
+}
