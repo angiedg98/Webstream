@@ -1,0 +1,21 @@
+.header {
+  background-color: blue;
+  height: 800px; }
+
+.recommended {
+  height: 400px;
+  background-color: blueviolet; }
+
+.filters {
+  background-color: cadetblue;
+  height: 200px; }
+
+.movieCards {
+  background-color: chocolate;
+  height: 800px; }
+
+.footer {
+  background-color: crimson;
+  height: 200px; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,10 +1,12 @@
+.nav {
+  background-color: #222c25;
+  border-bottom: 1px solid white;
+  height: 10vh;
+  z-index: 1; }
+
 .head {
-    height: 100vh;
-    background-color: antiquewhite;
-    text-align: center;
-    padding-top: 20px;
-    text-align: center;
-    padding-top: 200px;
-    font-weight: bold;
-    font-size: 30px;
-}
+  background-color: darkcyan;
+  height: 90vh;
+  z-index: -1; }
+
+/*# sourceMappingURL=individual.css.map */
