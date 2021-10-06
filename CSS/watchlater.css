@@ -1,39 +1,52 @@
 .nav {
   background-color: #222c25;
   border-bottom: 1px solid white;
-  height: 15vh;
-  z-index: 1; }
+  height: 15vh; }
 
 .logo {
-  width: 33.33%;
-  height: 80%;
-  background-image: url("../images/Group 40.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  margin-top: 20px; }
+  height: 100%;
+  padding-left: 40px;
+  padding-top: 18px;
+  cursor: pointer; }
 
 .links {
-  width: 33.33%;
   height: 100%;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  margin: 0 auto; }
 
 #navLink {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: white; }
+  color: white;
+  padding-top: 50px; }
 
 #navLink:hover {
   color: #11C6B3; }
 
 a {
-  padding: 20px;
+  padding: 41px;
   cursor: pointer; }
 
 .profile {
-  width: 33.34%;
   height: 100%;
-  background-color: cornflowerblue; }
+  text-align: center;
+  float: right; }
+
+.profile img {
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px; }
+
+.profile p {
+  float: right;
+  margin-top: 45px;
+  padding-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white; }
 
 .page {
   background-color: #222c25;
@@ -42,25 +55,28 @@ a {
   text-align: center;
   margin: 0 auto; }
 
-h3 {
+.title {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
   font-weight: bold;
-  padding-top: 30px; }
+  margin-top: 50px;
+  margin-bottom: 80px; }
 
 .RecContent {
   height: 400px;
   background-color: #222c25;
   float: left;
-  padding-top: 50px;
   margin-left: 150px; }
 
 .RecFilm {
   height: 300px;
   background-color: white;
   float: left;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: -1px -1px 35px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px -1px 35px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px -1px 35px 4px rgba(0, 0, 0, 0.5); }
 
 .RecMleft {
   margin-left: 6.5%;
@@ -71,7 +87,11 @@ h3 {
   float: left; }
 
 .footer {
-  background-color: darkred;
-  height: 20vh; }
+  background-color: #222c25;
+  height: 20vh;
+  display: flex; }
+
+.footerBlock {
+  height: 100%; }
 
 /*# sourceMappingURL=watchlater.css.map */
