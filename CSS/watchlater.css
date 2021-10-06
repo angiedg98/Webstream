@@ -20,14 +20,16 @@
   font-size: 20px;
   font-weight: bold;
   color: white;
-  padding-top: 50px; }
+  cursor: pointer;}
 
 #navLink:hover {
-  color: #11C6B3; }
+  color: #11C6B3; 
+  cursor: pointer;}
 
 a {
   padding: 41px;
-  cursor: pointer; }
+  cursor: pointer; 
+  text-decoration: none !important;}
 
 .profile {
   height: 100%;
@@ -95,3 +97,4 @@ a {
   height: 100%; }
 
 /*# sourceMappingURL=watchlater.css.map */
+
