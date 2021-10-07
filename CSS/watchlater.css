@@ -1,3 +1,6 @@
+body {
+  background-color: #222c25; }
+
 .nav {
   background-color: #222c25;
   border-bottom: 1px solid white;
@@ -20,16 +23,14 @@
   font-size: 20px;
   font-weight: bold;
   color: white;
-  cursor: pointer;}
+  padding-top: 50px; }
 
 #navLink:hover {
-  color: #11C6B3; 
-  cursor: pointer;}
+  color: #11C6B3; }
 
 a {
   padding: 41px;
-  cursor: pointer; 
-  text-decoration: none !important;}
+  cursor: pointer; }
 
 .profile {
   height: 100%;
@@ -54,8 +55,7 @@ a {
   background-color: #222c25;
   height: auto;
   z-index: -1;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
 
 .title {
   color: white;
@@ -65,28 +65,27 @@ a {
   margin-top: 50px;
   margin-bottom: 80px; }
 
-.RecContent {
-  height: 400px;
-  background-color: #222c25;
+.gutter {
   float: left;
-  margin-left: 150px; }
+  height: 300px; }
 
-.RecFilm {
+.movieCards {
   height: 300px;
-  background-color: white;
   float: left;
-  border-radius: 5px;
-  box-shadow: -1px -1px 35px 4px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: -1px -1px 35px 4px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -1px -1px 35px 4px rgba(0, 0, 0, 0.5); }
+  background: transparent; }
 
-.RecMleft {
-  margin-left: 6.5%;
-  float: left; }
+.card {
+  height: 100%; }
 
-.RecMright {
-  margin-right: 7%;
-  float: left; }
+.img_con {
+  height: 80%;
+  background-color: coral;
+  padding-right: 20px; }
+
+.card-body {
+  height: 10%;
+  background-color: darkcyan;
+  text-align: center; }
 
 .footer {
   background-color: #222c25;
@@ -97,4 +96,3 @@ a {
   height: 100%; }
 
 /*# sourceMappingURL=watchlater.css.map */
-
