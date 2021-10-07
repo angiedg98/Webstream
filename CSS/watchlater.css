@@ -26,7 +26,9 @@ body {
   padding-top: 50px; }
 
 #navLink:hover {
-  color: #11C6B3; }
+  color: #11C6B3; 
+  cursor: pointer;
+  transition: color .5s;}
 
 a {
   padding: 41px;
