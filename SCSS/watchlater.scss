@@ -1,5 +1,5 @@
-body {
-    background-color: #222c25;
+.container-fluid {
+    padding: 0 !important;
 }
 
 // nav styling
@@ -67,13 +67,14 @@ a {
     font-weight: lighter;
     color: white;
 }
+
 // watch later styling
 
 .page {
     background-color: #222c25;
     height: auto;
-    z-index: -1;
     text-align: center;
+    padding: 0;
 }
 
 .title {
@@ -93,25 +94,33 @@ a {
 .movieCards {
     height: 300px;
     float: left;
-    background: transparent;
+    margin-bottom: 80px;
 }
 
 .card {
     height: 100%;
-    
+    background-color: transparent !important;
+    border: none;
+    border-radius: 10px;
 }
 
 .img_con {
-    height: 80%;
-    background-color: coral;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.315);
     padding-right: 20px;
     // overflow: hidden;
 }
 
 .card-body {
     height: 10%;
-    background-color: darkcyan;
     text-align: center;
+}
+
+.movie-title {
+    font-size: 15px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -120,10 +129,49 @@ a {
 .footer {
     background-color: #222c25;
     height: 20vh;
-    display: flex;
+    position: relative;
 }
 
 .footerBlock {
     height: 100%;
+    float: left; 
+    
+}
+
+.social img {
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.info {
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button p{
+    padding-top: 8px;
+}
+
+.newsletter {
+    background-color: #11C6B3;
+    color:white;
+}
+
+.help {
+    background-color: white;
+    color: black;
+}
+
+.pattern img {
+    
 }
 
