@@ -10,6 +10,8 @@ body{
 }
 /* TO THE EDGES CONTAINER STYLING */
 
+
+
 /* NAVIGATION BAR */
 .navigationBar{
     margin:0;
@@ -104,6 +106,10 @@ body{
 }
 /* user profile picture */
 
+#userPic{
+height:90%;
+}
+
 .navLine{
     height:2px;
     background-color:grey;
@@ -119,7 +125,7 @@ body{
     flex-direction:column;
     justify-content:space-between;
     width:30px;
-    height: 21px;
+    height: 1.2rem;
 }
 
 .toggle-button .bar{
@@ -130,8 +136,8 @@ body{
 }
 
 
-/* @media queries for the navigation bar */
-@media (max-width: 600px) {
+/* @media queries for the navigation bar on mobile*/
+@media (min-width: 200px) and (max-width: 750px) {
     .toggle-button{
         display:flex;
     }
@@ -176,7 +182,153 @@ body{
     .navButtons.active{
         display:flex;
     }
+
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
 }
-    /* navigation bar buttons */
-/* @media queries for the navigation bar */
+/* @media queries for the navigation bar for mobile */
+
+/* @media queries for the navigation bar for tablet */
+@media (min-width:900px) and (max-width:1300px){
+    .userTitle{
+        display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:1rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .userTitle{
+        display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:.7rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
+}
+
+@media (min-width:850px) and (max-width:900px){
+    .userTitle{
+        display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:.9rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
+}
+/* @media queries for the navigation bar for tablet */
 /* NAVIGATION BAR */
+
+
+
+/* HEADER SLIDER */
+.headerSlider{
+    height:80vh;
+    background-color:white;
+}
+/* HEADER SLIDER */
+
+
+
+/* GUTTER */
+.gutter{
+    height:100%;
+    float:left;
+    /* background-color:yellow */
+}
+/* GUTTER */
+
+
+
+/* RECOMMENDED FILMS SECTION */
+.titleContainer{
+    height:10vh;
+    background-color:#222c25;
+    margin-bottom:1rem;
+}
+
+.titleBox{
+    height:100%;
+    font-family:sans-serif;
+    font-size:36px;
+    color:white;
+    align-items: center;
+    float:left;
+    padding-top:.8rem;
+    font-weight:bold;
+}
+
+.recContainer{
+    height:60vh;
+    background-color:#222c25;
+}
+
+.recFilmContainer{
+    height:50vh;
+    float:left;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.filmCard{
+    height:50vh;
+    float:left;
+}
+
+.filmImg{
+    height:90%;
+    background-color:white;
+    border-radius:.5rem;
+
+}
+
+.filmTitle{
+    height:10%;
+    font-family:sans-serif;
+    font-weight:lighter;
+    text-align:center;
+    padding-top:3%;
+    color:white;
+}
+/* RECOMMENDED FILMS SECTION */
