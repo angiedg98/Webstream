@@ -279,6 +279,13 @@ height:90%;
 }
 /* GUTTER */
 
+/* MIDDLE */
+.middle{
+    height:100%;
+    float:left;
+    display:flex;
+}
+/* MIDDLE */
 
 
 /* RECOMMENDED FILMS SECTION */
@@ -332,3 +339,39 @@ height:90%;
     color:white;
 }
 /* RECOMMENDED FILMS SECTION */
+
+
+
+/* MOVIE LIBRARY SECTION */
+.movieFilterContainer{
+    height: 7vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.filterButton{
+    height:100%;
+    background-color:#11C6B3;
+    float:left;
+    border-radius:5px;
+    display: flex-start;
+    font-family:sans-serif;
+    font-size:1.2rem;
+    color:#222c25;
+    text-align:center;
+    padding-top:.75rem;
+}
+
+.fbrm{
+    margin-right:1rem;
+}
+
+.fblm{
+    margin-left:4rem;
+}
+
+.grey{
+    background-color:#595959;
+    color:white;
+}
+/* MOVIE LIBRARY SECTION */
