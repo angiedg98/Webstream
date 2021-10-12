@@ -275,7 +275,7 @@ height:90%;
 .gutter{
     height:100%;
     float:left;
-    background-color:green;
+    /* background-color:green; */
 }
 /* GUTTER */
 
@@ -342,11 +342,12 @@ height:90%;
 
 
 
-/* MOVIE LIBRARY SECTION */
+/* MOVIE LIBRARY FILTER SECTION */
 .movieFilterContainer{
     height: 7vh;
     display:flex;
     justify-content: space-evenly;
+    background-color:#39483D;
 }
 
 .filterButton{
@@ -360,6 +361,8 @@ height:90%;
     color:#222c25;
     text-align:center;
     padding-top:.75rem;
+    font-weight:lighter;
+    cursor:pointer;
 }
 
 .fbrm{
@@ -374,4 +377,44 @@ height:90%;
     background-color:#595959;
     color:white;
 }
-/* MOVIE LIBRARY SECTION */
+
+.searchBar{
+    height:100%;
+    padding-top:.5rem;
+    border-radius:5px;
+    border-style:solid; border-width:medium; border-color:#11C6B3;
+    float:right;
+}
+
+.searchBar input{
+    width:90%;
+}
+
+.library{
+    background-color:#39483D;
+    margin-bottom:0;
+    height:11vh;
+    padding-bottom:1vh;
+}
+
+.input{
+    -webkit-appearance: none; box-shadow: none !important; }
+    :-webkit-autofill { color: #fff !important;
+    background-color:#39483D;
+}
+
+.movLibrary{
+    background-color:#39483D;
+    padding-top:1rem;
+}
+/* MOVIE LIBRARY FILTER SECTION */
+
+
+
+/* FOOTER SECTION */
+.footer{
+    height:40vh;
+    background-color:#222c25;
+    display:flex;
+}
+      /* FOOTER SECTION */
