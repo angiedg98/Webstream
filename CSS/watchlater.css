@@ -23,7 +23,8 @@
   font-size: 20px;
   font-weight: bold;
   color: white;
-  padding-top: 50px; }
+  padding-top: 10px;
+  border-bottom: none; }
 
 #navLink:hover {
   color: #11C6B3; }
@@ -40,7 +41,8 @@ a {
 .profile img {
   float: right;
   margin-top: 30px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  cursor: pointer; }
 
 .profile p {
   float: right;
@@ -49,7 +51,8 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: lighter;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .page {
   background-color: #222c25;
@@ -95,18 +98,14 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: bold; }
 
-  .social img {
-    padding: 20px;
-    cursor: pointer; }
-
-/* .footer {
+.footer {
   background-color: #222c25;
   height: 20vh;
   position: relative; }
 
 .footerBlock {
   height: 100%;
-  float: left;}
+  float: left; }
 
 .social img {
   padding: 20px;
@@ -128,64 +127,16 @@ a {
   background-color: #11C6B3;
   color: white; }
 
+.newsletter:hover {
+  background-color: white;
+  color: black; }
+
 .help {
   background-color: white;
   color: black; }
-} */
+
+.help:hover {
+  background-color: #11C6B3;
+  color: white; }
+
 /*# sourceMappingURL=watchlater.css.map */
-
-
-
-
-
-
-.footer{
-  height:20vh;
-  background-color:#222c25;
-}
-
-.social{
-  height:100%;
-  float:left;
-}
-
-/* GUTTER */
-.gutter{
-  height:100%;
-  float:left;
-}
-/* GUTTER */
-
-/* MIDDLE */
-.middle{
-  height:100%;
-  float:left;
-  display:flex;
-  justify-content: space-evenly;
-}
-/* MIDDLE */
-
-.button {
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  float: left;
-  margin: 20px;
-  cursor: pointer;
-  text-align: center; }
-
-  .button p {
-    padding-top: 8px; }
-  
-  .newsletter {
-    background-color: #11C6B3;
-    color: white; }
-  
-  .help {
-    background-color: white;
-    color: black; }
-
-    .slice{
-      background-size: contain;
-      overflow:hidden;
-    }
