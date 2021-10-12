@@ -105,11 +105,17 @@ a {
 
 .footerBlock {
   height: 100%;
-  float: left; }
+  float: left;
+  text-align: center; }
 
 .social img {
   padding: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 45px; }
+
+.info {
+  text-align: center; }
 
 .button {
   width: 150px;

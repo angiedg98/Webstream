@@ -138,18 +138,20 @@ a {
 .footerBlock {
     height: 100%;
     float: left;  
-
+    text-align: center;
 }
 
 
 .social img {
     padding: 20px;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 45px;
 }
 
 
 .info {
-
+    text-align: center;
     
 }
 
@@ -161,6 +163,7 @@ a {
     margin: 20px;
     cursor: pointer;
     text-align: center;
+    
 }
 
 .button p{
