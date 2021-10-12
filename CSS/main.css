@@ -267,6 +267,35 @@ height:90%;
     height:80vh;
     background-color:white;
 }
+
+@media (min-width:900px) and (max-width:1300px){
+    .headerSlider{
+        height:70vh;
+        background-color:yellow;
+    }
+}
+
+@media (min-width:850px) and (max-width:900px){
+    .headerSlider{
+        height:60vh;
+        background-color:green;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .headerSlider{
+        height:50vh;
+        background-color:blue;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+    .headerSlider{
+        height:50vh;
+        background-color:red;
+    }
+
+}
 /* HEADER SLIDER */
 
 
@@ -315,9 +344,80 @@ height:90%;
     height:50vh;
     float:left;
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 
+
+@media (min-width:900px) and (max-width:1300px){
+    .titleContainer{
+        height:8vh;
+        margin-bottom:.8rem;
+    }
+    .titleBox{
+        font-size:28px;
+    }
+    .recContainer{
+        height:55vh;
+    }
+    
+    .recFilmContainer{
+        height:45vh;
+    }
+}
+
+@media (min-width:850px) and (max-width:900px){
+    .titleContainer{
+        height:7vh;
+        margin-bottom:.7rem;
+    }
+    .titleBox{
+        font-size:25px;
+    }
+    .recContainer{
+        height:50vh;
+    }
+    
+    .recFilmContainer{
+        height:40vh;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .titleContainer{
+        height:6vh;
+        margin-bottom:.7rem;
+    }
+    .titleBox{
+        font-size:22px;
+    }
+    .recContainer{
+        height:30vh;
+    }
+    
+    .recFilmContainer{
+        height:40vh;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+    .titleContainer{
+        height:5vh;
+        margin-bottom:.7rem;
+    }
+    .titleBox{
+        font-size:18px;
+    }
+    .recContainer{
+        height:50vh;
+    }
+    
+    .recFilmContainer{
+        height:40vh;
+    }
+}
+/* RECOMMENDED FILMS SECTION */
+
+/* FILM CARDS */
 .filmCard{
     height:50vh;
     float:left;
@@ -338,7 +438,31 @@ height:90%;
     padding-top:3%;
     color:white;
 }
-/* RECOMMENDED FILMS SECTION */
+
+@media (min-width:900px) and (max-width:1300px){
+    .filmCard{
+        height:45vh;
+    }
+}
+
+@media (min-width:850px) and (max-width:900px){
+    .filmCard{
+        height:40vh;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .filmCard{
+        height:35vh;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+    .filmCard{
+        height:30vh;
+    }
+}
+/* FILM CARDS */
 
 
 
@@ -406,6 +530,33 @@ height:90%;
 .movLibrary{
     background-color:#39483D;
     padding-top:1rem;
+}
+
+@media (min-width:900px) and (max-width:1300px){
+    .movieFilterContainer{
+        height:6vh;
+        font-size:1.1rem;
+    }
+}
+@media (min-width:850px) and (max-width:900px){
+    .movieFilterContainer{
+        height:6vh;
+        font-size:1rem;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .movieFilterContainer{
+        height:6vh;
+        font-size:.9rem;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+    .movieFilterContainer{
+        height:6vh;
+        font-size:.8rem;
+    }
 }
 /* MOVIE LIBRARY FILTER SECTION */
 
