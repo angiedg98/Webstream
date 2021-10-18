@@ -1,291 +1,352 @@
-.header {
-    height: 100vh;
-
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2A362D !important;
 }
 
-.head {
-    height: 70%;
-    width: 150px;
-    background-color: #222c25;
-    margin-left: 200px;
-    margin-top: 15vh;
-    float:left;
-    border-top-left-radius: 10px;
-    box-shadow: -8px -7px 15px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: -8px -7px 15px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: -8px -7px 15px 1px rgba(0,0,0,0.3);
+.con {
+  width: 100%;
+  height: 100vh;
 }
 
-.feature {
-    height: 80%;
-    width: 700px;
-    background-color: #ffffff;
-    margin-top: 10vh;
-    float: left;
-    border-radius: 10px;
-    display: block;
+.zero {
+  background-color: #2A362D;
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10vh;
+  position: relative;
 }
+
+.one {
+  height: 100%;
+  width: 15%;
+  background-color: #39483D;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+}
+
+// children of one
+
+#logo {
+  height: 33.33%;
+  cursor: pointer;
+}
+
+#signup {
+  height: 33.33%;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+#login {
+  height: 33.33%;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.two {
+  height: 100%;
+  // background-color: green;
+  width: 85%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  // white-space: nowrap;
+  transition: all ease-in-out 500ms;
+}
+
+.three {
+  width: 45%;
+  height: 110%;
+  margin-top: -2.5%;
+  background-color: white;
+  float: left;
+  position: absolute;
+  left: 15%;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.four {
+  width: 50%;
+  height: 100%;
+  background-color: #39483D;
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+.slide-slide {
+  margin-left: 50% !important;
+}
+
+.five {
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  background-color: black;
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+// form styling
+
 
 .form {
-    height: 70%;
-    width: 600px;
-    margin-top: 15vh;
-    float: left;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-    box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  // overflow: hidden;
+  box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 9px -7px 15px 1px rgba(0,0,0,0.3);
 }
 
 .form-container {
-    height: 100%;
-    width: 1200px;
-    background-color: #222c25;
-    float: left;
-    margin-right: 200px;
-    border-top-right-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #222c25;
+  // margin-right: 200px;
+  border-top-right-radius: 10px;
 
 }
 
 
-// navigations styling
-
-.logo {
-    height: 33.3%;
-    width: 100%;
-    padding-top: 25px;
-    cursor: pointer;
+.signup {
+  padding-top: 30px;
+  color: rgb(255, 255, 255);
+  // padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 
 .login {
-    height: 33.3%;
-    width: 100%;
-    padding-top: 60px;
-    padding-left: 35px;
-    cursor: pointer;
-}
-
-.create {
-    height: 33.3%;
-    width: 100%;
-    padding-top: 60px;
-    padding-left: 40px;
-    cursor: pointer;
-    transition: all ease-out 800ms;
-    
-}
-
-.create-active {
-    height: 33.3%;
-    width: 100%;
-    padding-top: 60px;
-    padding-left: 40px;
-    cursor: pointer;
-    border-left: 3px solid #11C6B3;
-    transition: all ease-out 800ms;
-}
-
-/* form styling */
-
-.signup {
-    padding-top: 30px;
-    color: rgb(255, 255, 255);
-    padding-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-
-form {
-    width: 50%;
-    text-align: center;
-    height: 100%;
-    background-color: #222c25;
-    float:left;
+  width: 70%;
+  text-align: center;
+  height: 100%;
+  background-color: #222c25;
+  margin: 0 auto;
 }
 
 
 label {
-  letter-spacing: 2px;
-  padding-top: 20px;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+letter-spacing: 2px;
+padding-top: 10px;
+text-align: center;
+font-family: 'Raleway', sans-serif;
 } 
 
 .label-text {
-    color: #ffffff7e;
-    cursor: text;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-    transform:(translateY(-30px));
-    transition: all 0.3s;
-    font-family: 'Raleway', sans-serif;
-  }
+  color: #ffffff7e;
+  cursor: text;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  transform:(translateY(-30px));
+  transition: all 0.3s;
+  font-family: 'Raleway', sans-serif;
+}
 
 input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #d3d3d3;
-    color: rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    letter-spacing: -1px;
-    outline: 0;
-    padding: 5px 20px;
-    text-align: center;
-    transition: all 0.3s;
-    width: 200px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #d3d3d3;
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  letter-spacing: -1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
 
 
-    &:focus {
-        max-width: 100%;
-        width: 400px;
+  &:focus {
+      max-width: 100%;
+      width: 400px;
 
 
-    & + .label-text {
-    color: #ffffff;
-    font-size: 13px;
-    font-family: 'Raleway', sans-serif;
-    transform:(translateY(-60px));
+  & + .label-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  transform:(translateY(-50px));
 
-        
-    &:valid + .label-text {
-        font-size: 13px;
-        font-family: 'Raleway', sans-serif;
-        transform:(translateY(-74px));
-  
-}
-}
-}
-}
       
+  &:valid + .label-text {
+      font-size: 13px;
+      font-family: 'Raleway', sans-serif;
+      transform:(translateY(-74px));
+
+}
+}
+}
+}
+
+#forgot {
+  padding-top: 40px;
+  cursor: pointer;
+}
+
+#forgot:hover {
+  color: #11C6B3;
+}
+
+    
 .button {
-    margin-top: 20px;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    padding: 15px 30px;
-    width: 200px;
-    text-transform: uppercase;
-    transition: all 200ms;
-    border: none;
+  margin-top: 20px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 15px 30px;
+  width: 200px;
+  text-transform: uppercase;
+  transition: all 200ms;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
 
 
-  &:hover, &:focus {
-    background-color: #11C6B3;
-    color: #ffffff;
-    outline: 0;
+&:hover, &:focus {
+  background-color: #11C6B3;
+  color: #ffffff;
+  outline: 0;
 }
 }
 
-// testing particles
-
-/* Config */
-$color-particle: #e3f0e5;
-$spacing: 2560px;
-$time-1: 60s;
-$time-2: 120s;
-$time-3: 180s;
-$time-4: 200s;
-
-/* mixins */
-@function particles($max) {
-  $val: 0px 0px $color-particle;
-  @for $i from 1 through $max {
-    $val: #{$val}, random($spacing)+px random($spacing)+px $color-particle;
-  }
-  @return $val;
+#alt {
+  padding-top: 20px;
+  font-weight: bold;
 }
 
-@mixin particles($max) {
-  box-shadow: particles($max);
-  border-radius: 50%;
+
+
+// styling for login form on tablet devices
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+width: 360px;
+padding: 30% 0 0;
+margin: auto;
+}
+.form-two {
+position: relative;
+z-index: 1;
+background: #222c25;
+max-width: 360px;
+margin: 0 auto 300px;
+padding: 45px;
+text-align: center;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-/* Styles */
-
-
-
-.page-bg, .animation-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.title {
+color: white;
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 20px;
 }
 
-.page-bg {
-    background-color: #2A362D;
-  background-size: cover;
-  z-index: -1;
+.form-two input {
+font-family: "Roboto", sans-serif;
+outline: 0;
+background: #222c25;
+border-bottom: 0.5px solid white;
+width: 100%;
+//   border: 0;
+margin: 0 0 15px;
+padding: 15px;
+//   box-sizing: border-box;
+font-size: 18px;
 }
 
-.particle, .particle:after {
-  background: transparent;
+.form-two button {
+font-family: "Roboto", sans-serif;
+text-transform: uppercase;
+outline: 0;
+background: white;
+width: 100%;
+border: 0;
+padding: 15px;
+color: black;
+font-size: 14px;
+-webkit-transition: all 0.3 ease;
+transition: all 0.3 ease;
+cursor: pointer;
 }
 
-.particle:after {
-  position: absolute;
-  content: "";
-  top: $spacing;
+.form-two button:hover,.form button:active,.form button:focus {
+background: #11C6B3;
 }
 
-.particle-1 {
-  animation: animParticle $time-1 linear infinite;
-  @include particles(1000);
-  height: 2px;
-  width: 2px;
+.form-two .message {
+margin: 15px 0 0;
+color: #b3b3b3;
+font-size: 12px;
 }
 
-.particle-1:after {
-  @include particles(900);
-  height: 2px;
-  width: 2px;
+.form-two .message a {
+color: #11C6B3;
+text-decoration: none;
 }
 
-.particle-2 {
-  animation: animParticle $time-2 linear infinite;
-  @include particles(800);
-  height: 2px;
-  width: 2px;
+.form-two .register-form {
+display: none;
 }
 
-.particle-2:after {
-  @include particles(500);
-  height: 3px;
-  width: 3px;
+.container {
+position: relative;
+z-index: 1;
+max-width: 300px;
+margin: 0 auto;
 }
 
-.particle-3:after {
-  @include particles(1100);
-  height: 3px;
-  width: 3px;
-  border-radius: 50%;
+.container:before, .container:after {
+content: "";
+display: block;
+clear: both;
 }
 
-.particle-4 {
-  animation: animParticle $time-4 linear infinite;
-  @include particles(1200);
-  height: 1px;
-  width: 1px;
+.container .info {
+margin: 50px auto;
+text-align: center;
 }
 
-.particle-4:after {
-  @include particles(700);
-  height: 1px;
-  width: 1px;
+.container .info h1 {
+margin: 0 0 15px;
+padding: 0;
+font-size: 36px;
+font-weight: 300;
+color: #1a1a1a;
 }
 
-@keyframes animParticle {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY($spacing * -1);
-  }
+.container .info span {
+color: #4d4d4d;
+font-size: 12px;
+}
+
+.container .info span a {
+color: #000000;
+text-decoration: none;
+}
+
+.container .info span .fa {
+color: #EF3B3A;
 }

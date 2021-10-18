@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Signup</title>
-    <meta>
+    <title>Login/Signup Test</title>
 
-    <link rel="stylesheet" href="../CSS/landing.css">
 
     <!--CSS files-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -28,87 +26,132 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/landing.css">
 
 </head>
 <body>
     
-    <div class="row page-bg">
+    <div class="con">
 
-      
-
-        <div class="col-lg-12 col-md-12 header">
-
-            <div class="head">
-                <div class="logo"><img src="../images/logo-01.png" height="140" width="140"></div>
-                <div class="create"><img src="../images/Group 28.png" height="80" width="80"></div>
-                <div class="login"><img src="../images/Group 19.png" height="80" width="80"></div>
+      <div class="zero d-none d-md-block "><!--desktop ++ -->
+        <div class="one">
+            <div id="logo"></div> 
+            <div id="signup"> signup</div>
+            <div id="login">login</div>
+        </div>
+        <div class="three"></div>
+        <div class="two">
+            <div class="slide">
+                <div class="four">
+                    <div class="form">
+                        <div class="form-container">
+                            <form class="signin" autocomplete="on">
+                                <h3 class="signup">Sign up</h3>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">First name</div>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Last name</div>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Email address</div>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Select password</div>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Confirm password</div>
+                                </label>
+                                <br>
+                                  <button class="button signUp">Sign up</button>
+                            </form>
                 
-            </div><!--login buttons-->
+                        </div><!--form-container-->
+        
+                    </div><!--form section-->
+                </div>
+                <div class="five">
+                    <div class="form ">
+                        <div class="form-container">
+                            <form class="login" autocomplete="on">
+                                <h3 class="signup">Login</h3>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Email address</div>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="text" required />
+                                    <div class="label-text">Password</div>
+                                </label>
+                                <br>
+                                <p id="forgot">Forgot your password?<p>
+                                <button class="button margin">Login</button>
+                                <p id="alt">or sign in via</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div><!--zero-->
 
-            <div class="feature">
-                hello
-            </div><!--feature block-->
-
-            <div class="form">
-                <div class="form-container">
-                    <form class="signin" autocomplete="on">
-                        <h3 class="signup">Sign up</h3>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">First name</div>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">Last name</div>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">Email address</div>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">Select password</div>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">Confirm password</div>
-                        </label>
-                        <br>
-                          <button class="button">Sign up</button>
-                    </form>
-                    <form class="login" autocomplete="on">
-                        <h3 class="signup">Login</h3>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">Email address</div>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="text" required />
-                            <div class="label-text">Password</div>
-                        </label>
-                        <br>
-                          <button class="button">Sign up</button>
-                    </form>
-                </div><!--form-container-->
-
-            </div><!--form section-->
-            
-        </div><!--header-->
-
-        <div class="animation-wrapper">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
+      <div class="zero-tablet d-none d-sm-block d-md-none"> <!--tablet-->
+        <div class="login-page">
+            <div class="form-two">
+                <div class="title">Login</div>
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>signup</button>
+                <p class="message">Already registered? <a href="#">Login</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
           </div>
-    </div> <!--main row-->
+        </div>
+      </div><!--zero-->
 
-</div><!--container-->
+        <div class="zero d-block d-sm-none"> <!--phone-->
+            <div class="login-page">
+                <div class="form-two">
+                    <div class="title">Login</div>
+                  <form class="register-form">
+                    <input type="text" placeholder="name"/>
+                    <input type="password" placeholder="password"/>
+                    <input type="text" placeholder="email address"/>
+                    <button>signup</button>
+                    <p class="message">Already registered? <a href="#">Login</a></p>
+                  </form>
+                  <form class="login-form">
+                    <input type="text" placeholder="username"/>
+                    <input type="password" placeholder="password"/>
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div><!--zero-->
+
+
+    </div><!--container-->
 
 </body>
 </html>
