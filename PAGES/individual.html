@@ -22,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     
     <!--JS link-->
-    <script src="../JS/watchlater.js"></script>
+    <script src="../JS/individual.js"></script>
 
      <!--fonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,26 +35,39 @@
     <div class="container-fluid">
         
         <div class="row header">
-            <div class="col-lg-12 col-md-12 nav">
-                <div class="col-lg-4 logo"><img src="../images/Group 40.png" width="350" height="100"></div>
-                <div class="col-lg-4 links">
-                    <a style="text-decoration: none;" href="home.html"><div id="navLink"><p>Home</p></div></a>
-                    <a style="text-decoration: none;" href=""><div id="navLink"><p>Movies</p></div></a>
-                    <a style="text-decoration: none;" href=""><div id="navLink"><p>Series</p></div></a>
-                    <a style="text-decoration: none;" href="watchlater.html"><div id="navLink"><p>Watch Later</p></div></a>
-                </div>
-                <div class="col-lg-4 profile">
-                    <img src="../images/Ellipse 6.png" width="70" height="70">
-                    <p>User Name</p>
-                </div>
-            </div><!--end nav bar-->
-
-            <div class="row page-container">
-                <div class="col-md-12 col-sm-12  page">  
-                        <div class="col-lg-6 col-md-6 movie-pic ">
-                               <div class="cover-img"></div>
+                 
+            <!-- NAVIGATION BAR -->
+                    <div class="col-12 navigationBar">
+                        <div class="col-3 navLogo"><div id="navLogo"></div></div>
+                        <a href="#" class="toggle-button">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                        <div class="col-6 navButtons">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Movies</a></li>
+                                <li><a href="#">Series</a></li>
+                                <li><a href="../PAGES/watchlater.html">Watch Later</a></li>
+                            </ul>
                         </div>
-                    <div class="col-md-6 col-sm-12 movie-info">
+                        <div class="col-3 user">
+                            <div class="col-2 userTitle">Username</div>
+                            <div class="col-2 userPic"><img id="userPic" src="../images/Ellipse 6.png"></div>
+                        </div>
+                    </div>
+                    <div class="navLine"></div>
+                    <!-- NAVIGATION BAR -->
+
+            <div class="row-fluid page-container">
+                <div class="col-md-12 col-sm-12 desktop-page">  <!--desktop version-->
+
+                    <div class="col-lg-6 col-md-6  movie-pic ">
+                        <div class="cover-img"></div>
+                    </div>
+
+                    <div class="col-md-6 movie-info">
                         <div class="movie-title"><p>Venom</p></div>
                         <div class="ratings"><p>Action</p> <p id="div">|</p> <p>Thriller</p> <p id="div">|</p> <p>Fiction</p> <p id="div"></p> <p>2018</p> <p id="div"></p> <p id="rating">4.5</p> </div>
                         <div class="abstract">
@@ -72,7 +85,38 @@
                             <div class="return"></div>
                         </div>
                     </div>
+
                 </div>
+
+                <div class="col-12 tablet-page">  <!--tablet version-->
+                    <div class="col-12 top-block tablet-movie-pic">
+                        <div id="cont">
+                            <div class="tablet-cover-img"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 bottom-block">
+                        <div class="tablet-movie-title"><p>Venom</p></div>
+                        <div class="tablet-ratings"><p>Action</p> <p id="div">|</p> <p>Thriller</p> <p id="div">|</p> <p>Fiction</p> <p id="div"></p> <p>2018</p> <p id="div"></p> <p id="rating">4.5</p> </div>
+                        <div class="tablet-abstract">
+                            <p>
+                                Journalist Eddie Brock is trying to take down Carlton Drake, 
+                                the notorious and brilliant founder of the Life Foundation. While investigating 
+                                one of Drake's experiments, Eddie's body merges with the alien Venom 
+                                -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, 
+                                Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating.
+                            </p>
+                        </div>
+                        <div class="tablet-buttons">
+                            <div><img id="tab-btn" src="../images/play.png"></div>
+                            <div><img id="tab-btn" src="../images/add to watch later.png"></div>
+                            <div class="tablet-return"></div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
             </div><!--end page-->
 
         

@@ -4,87 +4,145 @@
 
 // nav styling
 
-.nav {
-    background-color: #222c25;
-    border-bottom: 1px solid white;
-    height: 15vh;
+/* NAVIGATION BAR */
+.navigationBar{
+    margin:0;
+    height:8vh;
+    background-color:#222c25;
+    display:flex;
+}
+/* BASELINE NAVIGATION BAR STYLING */
+
+.navLogo{
+    height:8vh;
+    float:left;
+    display:flex;
+    justify-content: center;
+}
+/* navigation bar website logo */
+
+#navLogo{
+    height:100%;
+    width:80%;
+    background-image:url("../images/Group\ 40.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+/* navigation bar website logo input/ this changes when screen size shifts/ shifting to the small logo */
+
+.navButtons{
+    height:100%;
+    background-color:#222c25;
+    float:left;
+    display:flex;
+    align-items:center;
+    color:white;
+    font-family:sans-serif;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+/* navigation bar buttons */
+
+.navButtons ul{
+    margin:0;
+    padding:0;
+    display:flex;
 }
 
-.logo {
-    height: 100%;
-    padding-left: 40px;
-    padding-top: 18px;
-    cursor: pointer;
+.navButtons li{
+    list-style-type: none;
 }
 
-.links {
-    height: 100%;
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
+.navButtons li a{
+    text-decoration: none;
+    color:white;
+    padding:1.5rem;
+    display:block;
+}
+
+.navButtons li a:hover{
+    text-decoration: none;
+    color:#11C6B3;
+    padding:1.5rem;
+    display:block;
+    transition: .5s;
+}
+
+.user{
+    height:100%;
+    background-color:#222c25;
+    float:left;
+}
+/* navigation bar user title and profile picture container */
+
+.userTitle{
+    height:100%;
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    font-weight:lighter;
+    float:right;
+    color:white;
+    align-items: center;
+    display:flex;
+    margin-right:3rem;
+}
+/* user title */
+
+.userPic{
+    height:100%;
+    align-items: center;
+    padding-top:.3vh;
+    float:right;
+    display:flex;
+    margin-right:1rem;
+}
+/* user profile picture */
+
+#userPic{
+height:90%;
+}
+
+.navLine{
+    height:2px;
+    background-color:grey;
+    width:100%;
+}
+/* navigation bar line break */
+
+.toggle-button{
+    position:absolute;
+    top:1.2rem;
+    right:1rem;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:30px;
+    height: 1.2rem;
+}
+
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    background-color:white;
+    border-radius:1.5px;
 }
 
 
-#navLink {
-    font-family: 'Raleway', sans-serif;
-    font-size:  20px;
-    font-weight: bold;
-    color: white;
-    padding-top: 10px;
-    border-bottom: none;
-}
-
-#navLink:hover {
-    color: #11C6B3;
-}
-
-a {
-    padding: 41px;
-    cursor: pointer;
-    
-}
-
-
-
-.profile {
-    height: 100%;
-    text-align: center;
-    float: right;
-}
-
-.profile img {
-    float: right;
-    margin-top: 30px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.profile p{
-    float: right;
-    margin-top: 45px;
-    padding-right: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size:  20px;
-    font-weight: lighter;
-    color: white;
-    cursor: pointer;
-}
+/* END NAVIGATION BAR */
 
 // individual middle styling
 
 .page-container {
     background-color: #222c25;
-    height: 85vh;
+    height: 92vh;
     text-align: center;
     padding: 0;
     overflow: hidden;
 }
 
-.overlay {
-    background-image: url(../images/gradient.png);
-    height: 100%;
+.desktop-page {
     width: 100%;
-
+    height: 100%;
 }
 
 .movie-pic {
@@ -97,13 +155,13 @@ a {
 }
 
 .cover-img {
-    height: 80%;
+    height: 70%;
     width: 40%;
-    background-color: hotpink;
     float: right;
-    margin-top: 10%;
+    margin-top: 15%;
     background-image:url(../images/9187a8t2caL._AC_SY679_.jpg);
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .movie-info {
@@ -119,7 +177,7 @@ a {
     margin-left: 80px;
     font-size: 50px;
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .ratings {
@@ -173,4 +231,242 @@ a {
     width: 60px;
     height: 60px;
     cursor: pointer;
+}
+
+// tablet styling
+
+.tablet-page {
+    background-color: #222c25;
+}
+
+.top-block {
+    height: 55vh;
+    // background-color: plum;
+}
+
+.bottom-block {
+    height: 45vh;
+    // background-color: powderblue;
+}
+
+.tablet-movie-pic {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #222c25),
+    url(../images/9187a8t2caL._AC_SY679_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cont {
+    width: 100%;
+    height: 100%;
+}
+
+.tablet-cover-img {
+    height: 70%;
+    width: 40%;
+    background-image:url(../images/9187a8t2caL._AC_SY679_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.tablet-movie-title {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: left;
+    margin-left: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    // padding-top: 10px;
+}
+
+.tablet-ratings {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 80px;
+    margin-top: 5px;
+    width: 50%;
+    height: 30px;
+    color: white;
+    font-size: 10px;
+    text-align: left;
+}
+
+.tablet-ratings p {
+    float: left;
+}
+
+#div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tablet-abstract {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+#rating {
+    background-color: #11C6B3;
+    width: 30px;
+    height: auto;
+    border-radius: 2px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
+}
+.tablet-buttons {
+    margin-left: 80px;
+    // margin-top: 40px;
+}
+
+#tab-btn {
+    float: left;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+// media query for individual page dekstop to tablet
+
+@media only screen and (max-width: 1024px) {
+    .desktop-page { display: none; }
+    .tablet-page { display: block; }
+    #userPic {height: 60%;}
+}
+
+/* @media queries for the navigation bar on mobile*/
+@media (min-width: 200px) and (max-width: 750px) {
+    .toggle-button{
+        display:flex;
+    }
+
+    .navButtons{
+        display:none;
+        width:100%;
+    }
+
+    .navigationBar{
+        height:auto;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .navButtons ul{
+        width:100%;
+        flex-direction: column;
+    }
+    
+    .navButtons li{
+        text-align:center;
+    }
+
+    .navButtons li a{
+        padding:.5rem;
+        text-align:center;
+    }
+
+    .userTitle{
+        display:none;
+    }
+
+    .userPic{
+        display:none;
+    }
+    .navButtons li a:hover{
+        color:white;
+        padding: .5rem;
+    }
+
+    .navButtons.active{
+        display:flex;
+    }
+
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+}
+/* @media queries for the navigation bar for mobile */
+
+/* @media queries for the navigation bar for tablet */
+@media (min-width:900px) and (max-width:1300px){
+    .userTitle{
+        display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:1rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .userTitle{
+        display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:.7rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
+}
+
+@media (min-width:850px) and (max-width:900px){
+    .userTitle{
+        display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:.9rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
 }

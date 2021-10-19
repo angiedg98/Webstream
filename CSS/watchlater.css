@@ -1,59 +1,115 @@
 .container-fluid {
   padding: 0 !important; }
 
-.nav {
+/* NAVIGATION BAR */
+.navigationBar {
+  margin: 0;
+  height: 8vh;
   background-color: #222c25;
-  border-bottom: 1px solid white;
-  height: 15vh; }
+  display: flex; }
 
-.logo {
-  height: 100%;
-  padding-left: 40px;
-  padding-top: 18px;
-  cursor: pointer; }
-
-.links {
-  height: 100%;
-  text-align: center;
+/* BASELINE NAVIGATION BAR STYLING */
+.navLogo {
+  height: 8vh;
+  float: left;
   display: flex;
-  margin: 0 auto; }
+  justify-content: center; }
 
-#navLink {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  padding-top: 10px;
-  border-bottom: none; }
-
-#navLink:hover {
-  color: #11C6B3; }
-
-a {
-  padding: 41px;
-  cursor: pointer; }
-
-.profile {
+/* navigation bar website logo */
+#navLogo {
   height: 100%;
-  text-align: center;
-  float: right; }
+  width: 80%;
+  background-image: url("../images/Group 40.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
 
-.profile img {
-  float: right;
-  margin-top: 30px;
-  margin-right: 20px;
-  cursor: pointer; }
-
-.profile p {
-  float: right;
-  margin-top: 45px;
-  padding-right: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
+/* navigation bar website logo input/ this changes when screen size shifts/ shifting to the small logo */
+.navButtons {
+  height: 100%;
+  background-color: #222c25;
+  float: left;
+  display: flex;
+  align-items: center;
   color: white;
-  cursor: pointer; }
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
 
+/* navigation bar buttons */
+.navButtons ul {
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+.navButtons li {
+  list-style-type: none; }
+
+.navButtons li a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  display: block; }
+
+.navButtons li a:hover {
+  text-decoration: none;
+  color: #11C6B3;
+  padding: 1.5rem;
+  display: block;
+  transition: .5s; }
+
+.user {
+  height: 100%;
+  background-color: #222c25;
+  float: left; }
+
+/* navigation bar user title and profile picture container */
+.userTitle {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  float: right;
+  color: white;
+  align-items: center;
+  display: flex;
+  margin-right: 3rem; }
+
+/* user title */
+.userPic {
+  height: 100%;
+  align-items: center;
+  padding-top: .3vh;
+  float: right;
+  display: flex;
+  margin-right: 1rem; }
+
+/* user profile picture */
+#userPic {
+  height: 90%; }
+
+.navLine {
+  height: 2px;
+  background-color: grey;
+  width: 100%; }
+
+/* navigation bar line break */
+.toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 1.2rem; }
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.5px; }
+
+/* END NAVIGATION BAR */
 .page {
   background-color: #222c25;
   height: auto;
@@ -150,5 +206,105 @@ a {
 .help:hover {
   background-color: #11C6B3;
   color: white; }
+
+/* @media queries for the navigation bar on mobile*/
+@media (min-width: 200px) and (max-width: 750px) {
+  .toggle-button {
+    display: flex; }
+
+  .navButtons {
+    display: none;
+    width: 100%; }
+
+  .navigationBar {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start; }
+
+  .navButtons ul {
+    width: 100%;
+    flex-direction: column; }
+
+  .navButtons li {
+    text-align: center; }
+
+  .navButtons li a {
+    padding: .5rem;
+    text-align: center; }
+
+  .userTitle {
+    display: none; }
+
+  .userPic {
+    display: none; }
+
+  .navButtons li a:hover {
+    color: white;
+    padding: .5rem; }
+
+  .navButtons.active {
+    display: flex; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; } }
+/* @media queries for the navigation bar for mobile */
+@media only screen and (max-width: 1024px) {
+  #userPic {
+    height: 60%; } }
+/* @media queries for the navigation bar for mobile */
+/* @media queries for the navigation bar for tablet */
+@media (min-width: 900px) and (max-width: 1300px) {
+  .userTitle {
+    display: none; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: 1rem; }
+
+  .navButtons li a:hover {
+    color: white; } }
+@media (min-width: 850px) and (max-width: 900px) {
+  .userTitle {
+    display: none; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: .9rem; }
+
+  .navButtons li a:hover {
+    color: white; } }
+@media only screen and (max-width: 850px) {
+  .userTitle {
+    display: none; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: .7rem; }
+
+  .navButtons li a:hover {
+    color: white; } }
+/* @media queries for the navigation bar for tablet */
 
 /*# sourceMappingURL=watchlater.css.map */
