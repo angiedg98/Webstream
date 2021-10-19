@@ -390,7 +390,7 @@ height:90%;
         font-size:22px;
     }
     .recContainer{
-        height:30vh;
+        height:45vh;
     }
     
     .recFilmContainer{
@@ -407,7 +407,7 @@ height:90%;
         font-size:18px;
     }
     .recContainer{
-        height:50vh;
+        height:40vh;
     }
     
     .recFilmContainer{
@@ -441,19 +441,19 @@ height:90%;
 
 @media (min-width:900px) and (max-width:1300px){
     .filmCard{
-        height:45vh;
+        height:50vh;
     }
 }
 
 @media (min-width:850px) and (max-width:900px){
     .filmCard{
-        height:40vh;
+        height:50vh;
     }
 }
 
 @media (min-width:750px) and (max-width:850px){
     .filmCard{
-        height:35vh;
+        height:45vh;
     }
 }
 
@@ -469,6 +469,7 @@ height:90%;
 /* FILTER BAR FOR MOVIE LIBRARY */
 .filterBarLibrary{
     height:10vh;
+    margin-bottom:2rem;
 }
 
 .filterButton{
@@ -500,8 +501,71 @@ height:90%;
 
 .filterButton:hover{
     cursor:pointer;
-    box-shadow: 2px 2px black;
+    box-shadow: 3px 4px 8px 0px rgba(57,72,61,0.75);
+    -webkit-box-shadow: 3px 4px 8px 0px rgba(57,72,61,0.75);
+    -moz-box-shadow: 3px 4px 8px 0px rgba(57,72,61,0.75);
 }
+
+.filterSearch{
+    height:80%;
+    border-style:solid;
+    border-color:#595959;
+    border-radius:4vh;
+    float:left;
+    margin-left:5%;
+    display:block;
+}
+
+/* Media Queries */
+@media (min-width:1000px) and (max-width:1300px){
+    .filterButton{
+        height:75%;
+        font-size:18px;
+        padding-top:1.7vh;
+    }
+    .allMovies{
+        background-color:#595959;
+        color:white;
+        font-size:15px;
+        padding-top:2vh;
+    }
+    .filterButtonMarginR{
+        margin-right:5%;
+    }
+
+}
+
+
+@media (min-width:850px) and (max-width:1000px){
+    .filterSearch{
+        display:none !important;
+    }
+}
+
+@media (min-width:750px) and (max-width:850px){
+    .filterButton:hover{
+    box-shadow: none !important;
+    }
+    .filterSearch{
+        display:none !important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+    .filterButton:hover{
+        box-shadow: none !important;
+    }
+    .filterSearch{
+        display:none !important;
+    }
+    .filterButtonMarginR{
+        margin-right:0;
+    }
+    .allMovies{
+        font-size:17px;
+    }
+}
+/* Media Queries */
 /* FILTER BAR FOR MOVIE LIBRARY */
 
 
