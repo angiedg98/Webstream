@@ -304,7 +304,6 @@ height:90%;
 .gutter{
     height:100%;
     float:left;
-    background-color:green;
 }
 /* GUTTER */
 
@@ -336,7 +335,7 @@ height:90%;
 }
 
 .recContainer{
-    height:60vh;
+    height:auto;
     background-color:#222c25;
 }
 
@@ -344,7 +343,7 @@ height:90%;
     height:auto;
     float:left;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
 
@@ -395,7 +394,7 @@ height:90%;
     }
     
     .recFilmContainer{
-        height:auto;
+        height:fit-content;
     }
 }
 
@@ -460,10 +459,50 @@ height:90%;
 
 @media (min-width: 200px) and (max-width: 750px) {
     .filmCard{
-        height:30vh;
+        height:35vh;
     }
 }
 /* FILM CARDS */
+
+
+
+/* FILTER BAR FOR MOVIE LIBRARY */
+.filterBarLibrary{
+    height:10vh;
+}
+
+.filterButton{
+    height:80%;
+    background-color:#11C6B3;
+    float:left;
+    border-radius:5px;
+    font-family: sans-serif;
+    color:#222c25;
+    text-align: center;
+    padding-top:1.3vh;
+    font-size:25px;
+}
+
+.filterButtonMarginL{
+    margin-left:2%;
+}
+
+.filterButtonMarginR{
+    margin-right:12%;
+}
+
+.allMovies{
+    background-color:#595959;
+    color:white;
+    font-size:20px;
+    padding-top:2vh;
+}
+
+.filterButton:hover{
+    cursor:pointer;
+    box-shadow: 2px 2px black;
+}
+/* FILTER BAR FOR MOVIE LIBRARY */
 
 
 
