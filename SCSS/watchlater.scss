@@ -163,6 +163,7 @@ height:90%;
     float: left;
     margin-bottom: 80px;
     margin:0 auto;
+    // overflow-x:  scroll;
 }
 
 .center {
@@ -170,6 +171,7 @@ height:90%;
     height: 100%;
     margin: 0 auto;
     padding-left: 80px;
+    // overflow: hidden;
 }
 
 .card {
@@ -177,9 +179,9 @@ height:90%;
     background-color: transparent !important;
     border: none;
     border-radius: 10px;
-    min-width: 250px;
+    min-width: 200px;
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 40px;
 }
 
@@ -329,17 +331,26 @@ height:90%;
         background-repeat:no-repeat;
     }
 
+    .center {
+       display:none;
+    }
+
+    .tab-center {
+        display:none;
+     }
+
+
+
 }
 /* @media queries for the navigation bar for mobile */
 
 
-// media query for individual page dekstop to tablet
+// media query for watchlater page dekstop to tablet
 
 @media only screen and (max-width: 1024px) {
     #userPic {height: 60%;}
 }
 
-/* @media queries for the navigation bar for mobile */
 
 /* @media queries for the navigation bar for tablet */
 @media (min-width:900px) and (max-width:1300px){
@@ -360,6 +371,14 @@ height:90%;
 
     .navButtons li a:hover{
         color:white;
+    }
+
+    .center {
+        display:none;
+     }
+
+    .tab-center {
+        display:block;
     }
 }
 
@@ -382,6 +401,15 @@ height:90%;
 
     .navButtons li a:hover{
         color:white;
+
+    }
+
+    .center {
+        display:none;
+     }
+
+     .tab-center {
+        display:block;
     }
 }
 
@@ -403,6 +431,15 @@ height:90%;
 
     .navButtons li a:hover{
         color:white;
+    }
+
+    .center {
+        display:none;
+     }
+
+
+    .tab-center {
+        display:none;
     }
 }
 /* @media queries for the navigation bar for tablet */

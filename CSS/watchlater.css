@@ -149,9 +149,9 @@
   background-color: transparent !important;
   border: none;
   border-radius: 10px;
-  min-width: 250px;
+  min-width: 200px;
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-bottom: 40px; }
 
 .img_con {
@@ -265,12 +265,17 @@
     width: 80%;
     background-image: url("../images/logo-01.png");
     background-size: contain;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+
+  .center {
+    display: none; }
+
+  .tab-center {
+    display: none; } }
 /* @media queries for the navigation bar for mobile */
 @media only screen and (max-width: 1024px) {
   #userPic {
     height: 60%; } }
-/* @media queries for the navigation bar for mobile */
 /* @media queries for the navigation bar for tablet */
 @media (min-width: 900px) and (max-width: 1300px) {
   .userTitle {
@@ -287,7 +292,13 @@
     font-size: 1rem; }
 
   .navButtons li a:hover {
-    color: white; } }
+    color: white; }
+
+  .center {
+    display: none; }
+
+  .tab-center {
+    display: block; } }
 @media (min-width: 850px) and (max-width: 900px) {
   .userTitle {
     display: none; }
@@ -303,7 +314,13 @@
     font-size: .9rem; }
 
   .navButtons li a:hover {
-    color: white; } }
+    color: white; }
+
+  .center {
+    display: none; }
+
+  .tab-center {
+    display: block; } }
 @media only screen and (max-width: 850px) {
   .userTitle {
     display: none; }
@@ -319,7 +336,13 @@
     font-size: .7rem; }
 
   .navButtons li a:hover {
-    color: white; } }
+    color: white; }
+
+  .center {
+    display: none; }
+
+  .tab-center {
+    display: none; } }
 /* @media queries for the navigation bar for tablet */
 
 /*# sourceMappingURL=watchlater.css.map */
