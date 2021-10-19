@@ -5,7 +5,7 @@
 .navigationBar {
   margin: 0;
   height: 8vh;
-  background-color: #39483D;
+  background-color: #222c25;
   display: flex; }
 
 /* BASELINE NAVIGATION BAR STYLING */
@@ -19,14 +19,14 @@
 #navLogo {
   height: 100%;
   width: 80%;
-  background-image: url("../images/Group 42 (2) 1.jpg");
+  background-image: url("../images/Group 40.png");
   background-size: contain;
   background-repeat: no-repeat; }
 
 /* navigation bar website logo input/ this changes when screen size shifts/ shifting to the small logo */
 .navButtons {
   height: 100%;
-  background-color: #39483D;
+  background-color: #222c25;
   float: left;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
 
 .user {
   height: 100%;
-  background-color: #39483D;
+  background-color: #222c25;
   float: left; }
 
 /* navigation bar user title and profile picture container */
@@ -112,15 +112,14 @@
 /* END NAVIGATION BAR */
 .page-container {
   background-color: #222c25;
-  height: 85vh;
+  height: 92vh;
   text-align: center;
   padding: 0;
   overflow: hidden; }
 
-.overlay {
-  background-image: url(../images/gradient.png);
-  height: 100%;
-  width: 100%; }
+.desktop-page {
+  width: 100%;
+  height: 100%; }
 
 .movie-pic {
   height: 100%;
@@ -130,13 +129,13 @@
   background-size: cover; }
 
 .cover-img {
-  height: 80%;
+  height: 70%;
   width: 40%;
-  background-color: hotpink;
   float: right;
-  margin-top: 10%;
+  margin-top: 15%;
   background-image: url(../images/9187a8t2caL._AC_SY679_.jpg);
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .movie-info {
   height: 100%;
@@ -149,7 +148,7 @@
   margin-left: 80px;
   font-size: 50px;
   font-weight: bold;
-  padding-top: 100px; }
+  padding-top: 150px; }
 
 .ratings {
   font-family: 'Raleway', sans-serif;
@@ -197,60 +196,95 @@
   height: 60px;
   cursor: pointer; }
 
-.tablet-nav {
-  background-color: #222c25;
-  border-bottom: 1px solid white;
-  height: 15vh;
-  width: 100%; }
-
-.tablet-profile {
-  height: 100%;
-  text-align: center; }
-
-.tablet-profile img {
-  cursor: pointer; }
-
-.tablet-profile p {
-  margin-top: 45px;
-  padding-right: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-  color: white;
-  cursor: pointer; }
-
 .tablet-page {
+  background-color: #222c25; }
+
+.top-block {
+  height: 55vh; }
+
+.bottom-block {
+  height: 45vh; }
+
+.tablet-movie-pic {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #222c25), url(../images/9187a8t2caL._AC_SY679_.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#cont {
   width: 100%;
   height: 100%; }
 
-.tablet-movie-pic {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #222c25), url(../images/9187a8t2caL._AC_SY679_.jpg);
-  background-size: cover;
-  padding-top: 10%; }
-
 .tablet-cover-img {
-  height: 80%;
+  height: 70%;
   width: 40%;
-  background-color: hotpink;
   background-image: url(../images/9187a8t2caL._AC_SY679_.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   margin: 0 auto; }
 
-.tablet-movie-info {
-  height: 100%;
-  width: 100%; }
+.tablet-movie-title {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: left;
+  margin-left: 80px;
+  font-size: 50px;
+  font-weight: bold; }
+
+.tablet-ratings {
+  font-family: 'Raleway', sans-serif;
+  margin-left: 80px;
+  margin-top: 5px;
+  width: 50%;
+  height: 30px;
+  color: white;
+  font-size: 10px;
+  text-align: left; }
+
+.tablet-ratings p {
+  float: left; }
+
+#div {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.tablet-abstract {
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 80%;
+  height: auto;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: left; }
+
+#rating {
+  background-color: #11C6B3;
+  width: 30px;
+  height: auto;
+  border-radius: 2px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold; }
+
+.tablet-buttons {
+  margin-left: 80px; }
+
+#tab-btn {
+  float: left;
+  width: 40px;
+  height: 40px;
+  cursor: pointer; }
 
 @media only screen and (max-width: 1024px) {
-  .page {
+  .desktop-page {
     display: none; }
 
-  .nav {
-    display: none; }
+  .tablet-page {
+    display: block; }
 
-  .tablet-nav {
-    display: block; } }
+  #userPic {
+    height: 60%; } }
 /* @media queries for the navigation bar on mobile*/
 @media (min-width: 200px) and (max-width: 750px) {
   .toggle-button {
