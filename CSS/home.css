@@ -1,21 +1,508 @@
-.header {
-  background-color: blue;
-  height: 800px; }
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #222c25 !important; }
 
-.recommended {
-  height: 400px;
-  background-color: blueviolet; }
+/* BASELINE STYLING FOR BODY */
+.container-fluid {
+  padding: 0 !important; }
 
-.filters {
-  background-color: cadetblue;
-  height: 200px; }
+/* TO THE EDGES CONTAINER STYLING */
+/* NAVIGATION BAR */
+.navigationBar {
+  margin: 0;
+  height: 8vh;
+  background-color: #39483D;
+  display: flex; }
+
+/* BASELINE NAVIGATION BAR STYLING */
+.navLogo {
+  height: 8vh;
+  float: left;
+  display: flex;
+  justify-content: center; }
+
+/* navigation bar website logo */
+#navLogo {
+  height: 100%;
+  width: 80%;
+  background-image: url("../images/Group 42 (2) 1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* navigation bar website logo input/ this changes when screen size shifts/ shifting to the small logo */
+.navButtons {
+  height: 100%;
+  background-color: #39483D;
+  float: left;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+/* navigation bar buttons */
+.navButtons ul {
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+.navButtons li {
+  list-style-type: none; }
+
+.navButtons li a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  display: block; }
+
+.navButtons li a:hover {
+  text-decoration: none;
+  color: #11C6B3;
+  padding: 1.5rem;
+  display: block;
+  transition: .5s; }
+
+.user {
+  height: 100%;
+  background-color: #39483D;
+  float: left; }
+
+/* navigation bar user title and profile picture container */
+.userTitle {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  float: right;
+  color: white;
+  align-items: center;
+  display: flex;
+  margin-right: 3rem; }
+
+/* user title */
+.userPic {
+  height: 100%;
+  align-items: center;
+  padding-top: .3vh;
+  float: right;
+  display: flex;
+  margin-right: 1rem; }
+
+/* user profile picture */
+#userPic {
+  height: 90%; }
+
+.navLine {
+  height: 2px;
+  background-color: grey;
+  width: 100%; }
+
+/* navigation bar line break */
+.toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 1.2rem; }
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.5px; }
+
+/* @media queries for the navigation bar on mobile*/
+@media (min-width: 200px) and (max-width: 750px) {
+  .toggle-button {
+    display: flex; }
+
+  .navButtons {
+    display: none;
+    width: 100%; }
+
+  .navigationBar {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start; }
+
+  .navButtons ul {
+    width: 100%;
+    flex-direction: column; }
+
+  .navButtons li {
+    text-align: center; }
+
+  .navButtons li a {
+    padding: .5rem;
+    text-align: center; }
+
+  .userTitle {
+    display: none; }
+
+  .userPic {
+    display: none; }
+
+  .navButtons li a:hover {
+    color: white;
+    padding: .5rem; }
+
+  .navButtons.active {
+    display: flex; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; } }
+/* @media queries for the navigation bar for mobile */
+/* @media queries for the navigation bar for tablet */
+@media (min-width: 900px) and (max-width: 1300px) {
+  .userTitle {
+    display: none; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: 1rem; }
+
+  .navButtons li a:hover {
+    color: white; } }
+@media (min-width: 750px) and (max-width: 850px) {
+  .userTitle {
+    display: none; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: .7rem; }
+
+  .navButtons li a:hover {
+    color: white; } }
+@media (min-width: 850px) and (max-width: 900px) {
+  .userTitle {
+    display: none; }
+
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: .9rem; }
+
+  .navButtons li a:hover {
+    color: white; } }
+/* @media queries for the navigation bar for tablet */
+/* NAVIGATION BAR */
+/* HEADER SLIDER */
+.headerSlider {
+  height: 80vh;
+  background-color: white; }
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .headerSlider {
+    height: 70vh;
+    background-color: yellow; } }
+@media (min-width: 850px) and (max-width: 900px) {
+  .headerSlider {
+    height: 60vh;
+    background-color: green; } }
+@media (min-width: 750px) and (max-width: 850px) {
+  .headerSlider {
+    height: 50vh;
+    background-color: blue; } }
+@media (min-width: 200px) and (max-width: 750px) {
+  .headerSlider {
+    height: 50vh;
+    background-color: red; } }
+/* HEADER SLIDER */
+/* GUTTER */
+.gutter {
+  height: 100%;
+  float: left; }
+
+/* GUTTER */
+/* MIDDLE */
+.middle {
+  height: 100%;
+  float: left;
+  display: flex; }
+
+/* MIDDLE */
+/* RECOMMENDED FILMS SECTION */
+.titleContainer {
+  height: 10vh;
+  background-color: #222c25;
+  margin-bottom: 1rem; }
+
+.titleBox {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 36px;
+  color: white;
+  align-items: center;
+  float: left;
+  padding-top: .8rem;
+  font-weight: bold; }
+
+.recContainer {
+  height: auto;
+  background-color: #222c25; }
+
+.recFilmContainer {
+  height: auto;
+  float: left;
+  display: flex;
+  justify-content: space-evenly; }
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .titleContainer {
+    height: 8vh;
+    margin-bottom: .8rem; }
+
+  .titleBox {
+    font-size: 28px; }
+
+  .recContainer {
+    height: 55vh; }
+
+  .recFilmContainer {
+    height: auto; } }
+@media (min-width: 850px) and (max-width: 900px) {
+  .titleContainer {
+    height: 7vh;
+    margin-bottom: .7rem; }
+
+  .titleBox {
+    font-size: 25px; }
+
+  .recContainer {
+    height: 50vh; }
+
+  .recFilmContainer {
+    height: auto; } }
+@media (min-width: 750px) and (max-width: 850px) {
+  .titleContainer {
+    height: 6vh;
+    margin-bottom: .7rem; }
+
+  .titleBox {
+    font-size: 22px; }
+
+  .recContainer {
+    height: 45vh; }
+
+  .recFilmContainer {
+    height: fit-content; } }
+@media (min-width: 200px) and (max-width: 750px) {
+  .titleContainer {
+    height: 5vh;
+    margin-bottom: .7rem; }
+
+  .titleBox {
+    font-size: 18px; }
+
+  .recContainer {
+    height: 40vh; }
+
+  .recFilmContainer {
+    height: auto; } }
+/* RECOMMENDED FILMS SECTION */
+/* FILM CARDS */
+.filmCard {
+  height: 60vh;
+  float: left;
+  width: 225px; }
+
+.filmImg {
+  height: 90%;
+  background-color: white;
+  border-radius: .5rem;
+  overflow: hidden; }
+
+.filmTitle {
+  height: 10%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 3%;
+  color: white; }
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .filmCard {
+    height: 50vh; } }
+@media (min-width: 850px) and (max-width: 900px) {
+  .filmCard {
+    height: 50vh; } }
+@media (min-width: 750px) and (max-width: 850px) {
+  .filmCard {
+    height: 45vh; } }
+@media (min-width: 200px) and (max-width: 750px) {
+  .filmCard {
+    height: 35vh; } }
+/* FILM CARDS */
+/* FILTER BAR FOR MOVIE LIBRARY */
+.filterBarLibrary {
+  height: 10vh;
+  margin-bottom: 2rem; }
+
+.filterButton {
+  height: 80%;
+  background-color: #11C6B3;
+  float: left;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: #222c25;
+  text-align: center;
+  padding-top: 1.3vh;
+  font-size: 25px; }
+
+.filterButtonMarginL {
+  margin-left: 2%; }
+
+.filterButtonMarginR {
+  margin-right: 12%; }
+
+.allMovies {
+  background-color: #595959;
+  color: white;
+  font-size: 20px;
+  padding-top: 2vh; }
+
+.filterButton:hover {
+  cursor: pointer;
+  box-shadow: 3px 4px 8px 0px rgba(57, 72, 61, 0.75);
+  -webkit-box-shadow: 3px 4px 8px 0px rgba(57, 72, 61, 0.75);
+  -moz-box-shadow: 3px 4px 8px 0px rgba(57, 72, 61, 0.75); }
+
+.filterSearch {
+  height: 80%;
+  border-style: solid;
+  border-color: #595959;
+  border-radius: 4vh;
+  float: left;
+  margin-left: 5%;
+  display: block; }
+
+/* Media Queries */
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .filterButton {
+    height: 75%;
+    font-size: 18px;
+    padding-top: 1.7vh; }
+
+  .allMovies {
+    background-color: #595959;
+    color: white;
+    font-size: 15px;
+    padding-top: 2vh; }
+
+  .filterButtonMarginR {
+    margin-right: 5%; } }
+@media (min-width: 850px) and (max-width: 1000px) {
+  .filterSearch {
+    display: none !important; } }
+@media (min-width: 750px) and (max-width: 850px) {
+  .filterButton:hover {
+    box-shadow: none !important; }
+
+  .filterSearch {
+    display: none !important; } }
+@media (min-width: 200px) and (max-width: 750px) {
+  .filterButton:hover {
+    box-shadow: none !important; }
+
+  .filterSearch {
+    display: none !important; }
+
+  .filterButtonMarginR {
+    margin-right: 0; }
+
+  .allMovies {
+    font-size: 17px; } }
+/* Media Queries */
+/* FILTER BAR FOR MOVIE LIBRARY */
+/* FOOTER SECTION */
+.footer {
+  height: 40vh;
+  background-color: #222c25;
+  display: flex; }
+
+/* FOOTER SECTION */
+.page-container {
+  width: 100%;
+  height: 92vh;
+  background-color: #222c25; }
+
+.page {
+  height: auto;
+  text-align: center;
+  padding: 0; }
+
+.title {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 80px; }
+
+.gutter {
+  float: left;
+  height: 300px; }
 
 .movieCards {
-  background-color: chocolate;
-  height: 800px; }
+  height: 300px;
+  float: left;
+  margin-bottom: 80px;
+  margin: 0 auto; }
 
-.footer {
-  background-color: crimson;
-  height: 200px; }
+.center {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+.card {
+  height: 100%;
+  background-color: transparent !important;
+  border: none;
+  border-radius: 10px;
+  min-width: 200px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 40px; }
+
+.img_con {
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.315);
+  padding-right: 20px; }
+
+.card-body {
+  height: 10%;
+  text-align: center; }
+
+.movie-title {
+  font-size: 15px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold; }
 
 /*# sourceMappingURL=home.css.map */
