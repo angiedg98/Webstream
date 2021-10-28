@@ -1,6 +1,3 @@
-.container-fluid {
-  padding: 0 !important; }
-
 /* NAVIGATION BAR */
 .navigationBar {
   margin: 0;
@@ -146,6 +143,7 @@
 
 .card {
   height: 100%;
+  width: 250px;
   background-color: transparent !important;
   border: none;
   border-radius: 10px;
@@ -223,7 +221,7 @@
   color: white; }
 
 /* @media queries for the navigation bar on mobile*/
-@media (min-width: 200px) and (max-width: 750px) {
+@media (max-width: 750px) {
   .toggle-button {
     display: flex; }
 
@@ -267,15 +265,9 @@
     background-size: contain;
     background-repeat: no-repeat; }
 
-  .center {
-    display: none; }
-
-  .tab-center {
-    display: none; } }
+  .card {
+    width: 300px; } }
 /* @media queries for the navigation bar for mobile */
-@media only screen and (max-width: 1024px) {
-  #userPic {
-    height: 60%; } }
 /* @media queries for the navigation bar for tablet */
 @media (min-width: 900px) and (max-width: 1300px) {
   .userTitle {
@@ -294,11 +286,27 @@
   .navButtons li a:hover {
     color: white; }
 
-  .center {
+  .card {
+    width: 250px; } }
+@media (min-width: 750px) and (max-width: 850px) {
+  .userTitle {
     display: none; }
 
-  .tab-center {
-    display: block; } }
+  #navLogo {
+    height: 100%;
+    width: 80%;
+    background-image: url("../images/logo-01.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navButtons li {
+    font-size: .7rem; }
+
+  .navButtons li a:hover {
+    color: white; }
+
+  .card {
+    width: 300px; } }
 @media (min-width: 850px) and (max-width: 900px) {
   .userTitle {
     display: none; }
@@ -316,33 +324,9 @@
   .navButtons li a:hover {
     color: white; }
 
-  .center {
-    display: none; }
-
-  .tab-center {
-    display: block; } }
-@media only screen and (max-width: 850px) {
-  .userTitle {
-    display: none; }
-
-  #navLogo {
-    height: 100%;
-    width: 80%;
-    background-image: url("../images/logo-01.png");
-    background-size: contain;
-    background-repeat: no-repeat; }
-
-  .navButtons li {
-    font-size: .7rem; }
-
-  .navButtons li a:hover {
-    color: white; }
-
-  .center {
-    display: none; }
-
-  .tab-center {
-    display: none; } }
+  .card {
+    width: 300px; } }
 /* @media queries for the navigation bar for tablet */
+/* NAVIGATION BAR */
 
 /*# sourceMappingURL=watchlater.css.map */

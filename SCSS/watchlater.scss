@@ -1,6 +1,4 @@
-.container-fluid {
-    padding: 0 !important;
-}
+
 
 // nav styling
 
@@ -176,6 +174,7 @@ height:90%;
 
 .card {
     height: 100%;
+    width: 250px;
     background-color: transparent !important;
     border: none;
     border-radius: 10px;
@@ -277,7 +276,7 @@ height:90%;
 
 
 /* @media queries for the navigation bar on mobile*/
-@media (min-width: 200px) and (max-width: 750px) {
+@media  (max-width: 750px) {
     .toggle-button{
         display:flex;
     }
@@ -331,26 +330,12 @@ height:90%;
         background-repeat:no-repeat;
     }
 
-    .center {
-       display:none;
+    .card {
+        width: 300px;
     }
-
-    .tab-center {
-        display:none;
-     }
-
-
 
 }
 /* @media queries for the navigation bar for mobile */
-
-
-// media query for watchlater page dekstop to tablet
-
-@media only screen and (max-width: 1024px) {
-    #userPic {height: 60%;}
-}
-
 
 /* @media queries for the navigation bar for tablet */
 @media (min-width:900px) and (max-width:1300px){
@@ -373,47 +358,12 @@ height:90%;
         color:white;
     }
 
-    .center {
-        display:none;
-     }
-
-    .tab-center {
-        display:block;
+    .card {
+        width: 250px;
     }
 }
 
-
-@media (min-width:850px) and (max-width:900px){
-    .userTitle{
-        display:none;
-    }
-    #navLogo{
-        height:100%;
-        width:80%;
-        background-image:url("../images/logo-01.png");
-        background-size: contain;
-        background-repeat:no-repeat;
-    }
-
-    .navButtons li{
-        font-size:.9rem;
-    }
-
-    .navButtons li a:hover{
-        color:white;
-
-    }
-
-    .center {
-        display:none;
-     }
-
-     .tab-center {
-        display:block;
-    }
-}
-
-@media only screen and (max-width:850px){
+@media (min-width:750px) and (max-width:850px){
     .userTitle{
         display:none;
     }
@@ -433,13 +383,34 @@ height:90%;
         color:white;
     }
 
-    .center {
-        display:none;
-     }
+    .card {
+        width: 300px;
+    }
+}
 
-
-    .tab-center {
+@media (min-width:850px) and (max-width:900px){
+    .userTitle{
         display:none;
+    }
+    #navLogo{
+        height:100%;
+        width:80%;
+        background-image:url("../images/logo-01.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .navButtons li{
+        font-size:.9rem;
+    }
+
+    .navButtons li a:hover{
+        color:white;
+    }
+
+    .card {
+        width: 300px;
     }
 }
 /* @media queries for the navigation bar for tablet */
+/* NAVIGATION BAR */

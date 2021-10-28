@@ -97,6 +97,11 @@ body {
   width: 100%;
 }
 
+.test {
+  width: 100%;
+  display: none;
+}
+
 .featureOne {
   height: 45%;
   color: #000000;
@@ -115,6 +120,7 @@ body {
 }
 
 .slide-slide {
+  height: 100%;
   margin-left: 50% !important;
 }
 
@@ -248,8 +254,7 @@ input {
   transition: all 200ms;
   border: none;
   border-radius: 10px;
-  margin-top: 20px;
-
+  text-decoration: none;
 
 &:hover, &:focus {
   background-color: #11C6B3;
