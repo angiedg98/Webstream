@@ -8,5 +8,10 @@ $(function(){
         console.log("clicked");
         navbarLinks.classList.toggle('active')
     });
+
+    document.getElementsByClassName("headerSlider")
+        console.log("Header container spotted");
+        
+    
 });
 
