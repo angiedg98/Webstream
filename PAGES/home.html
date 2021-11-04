@@ -40,7 +40,6 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Movies</a></li>
-                        <li><a href="#">Series</a></li>
                         <li><a href="../PAGES/watchlater.html">Watch Later</a></li>
                     </ul>
                 </div>
@@ -57,33 +56,35 @@
         <!-- HEADER SLIDER -->
         <div class="row">
             <div class="col-12 headerSlider">
-                <div class="headerSlideContainer">
-                    <button id="left"></button>
+                <div class="carousel">
+                    <button class="carousel_button carousel_button--left">
+                        <img id="sliderButton" src="../images/left button.png" alt="">
+                    </button>
 
-                    <ul class="headerSlides">
-                        <li class="Slide">
-                            <img src="" alt="">
-                            <div class="SlideOverlay"></div>
-                            <p>1</p>
-                        </li>
-                        <li class="Slide">
-                            <img src="" alt="">
-                            <div class="SlideOverlay"></div>
-                            <p>2</p>
-                        </li>
-                        <li class="Slide">
-                            <img src="" alt="">
-                            <div class="SlideOverlay"></div>
-                            <p>3</p>
-                        </li>
-                    </ul>
+                        <div class="carousel_track-container">
+                            <ul class="carousel_track">
+                                <li class="carousel_slide current-slide">
+                                    <img class="carousel_image" src="../images/slider test image.jpeg" alt="">
+                                </li>
+                                <li class="carousel_slide">
+                                    <img class="carousel_image" src="../images/slider test image 2.jpeg" alt="">
+                                </li>
+                                <li class="carousel_slide">
+                                    <img class="carousel_image" src="../images/slider test image 3.jpeg" alt="">
+                                </li>
+                            </ul>
+                        </div>
 
-                    <button class="right"></button>
+                    <div class="carousel_image_overlay"></div>
+
+                    <button class="carousel_button carousel_button--right">
+                        <img id="sliderButton" src="../images/right button.png" alt="">
+                    </button>
                 </div>
             </div>
         
             <!-- HEADER SLIDER -->
-    <!-- </div> -->
+        </div>
     <!-- HEADER CONTENT CONTAINER -->
 
 
@@ -142,51 +143,7 @@
     <div class="col-lg-12 col-md-12  page">
         <div class="col-1 gutter"></div><!--gutter-->
         <div class="col-10 movieCards">
-            <div class="center">
-                <div class="col-2 card"> <!-- movie cards-->
-                        <div class="img_con">
-                            <img src="" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                        </div>
-                </div>
-                
-                <div class="col-2 card"> <!-- movie cards-->
-                    <div class="img_con">
-                        <img src="" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="movie-title">Movie Title</h5>
-                    </div>
-                </div>
-
-                <div class="col-2 card"> <!-- movie cards-->
-                    <div class="img_con">
-                        <img src="" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="movie-title">Movie Title</h5>
-                    </div>
-                </div>
-            
-                <div class="col-2 card"> <!-- movie cards-->
-                    <div class="img_con">
-                        <img src="" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="movie-title">Movie Title</h5>
-                    </div>
-                </div>
-
-                <div class="col-2 card"> <!-- movie cards-->
-                    <div class="img_con">
-                        <img src="" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="movie-title">Movie Title</h5>
-                    </div>
-                </div>
-            </div>
+           
+        </div>
 </body>
 </html>
