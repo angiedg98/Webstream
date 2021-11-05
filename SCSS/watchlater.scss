@@ -213,6 +213,13 @@ height:90%;
     
 }
 
+.footerTwo {
+    background-color: #222c25;
+    height: 20vh;
+    position: relative;
+    
+}
+
 .footerBlock {
     height: 100%;
     float: left;  
@@ -272,6 +279,17 @@ height:90%;
 .help:hover {
     background-color: #11C6B3;
     color:white;
+}
+
+#getHelp {
+    margin-top: 70px;
+    margin-right: 100px;
+    float: right;
+    cursor: pointer;
+}
+
+.footerTwo {
+    display: none;
 }
 
 
@@ -334,6 +352,14 @@ height:90%;
         width: 300px;
     }
 
+    .footer {
+        display: none;
+    }
+
+    .footerTwo {
+        display: block;
+    }
+
 }
 /* @media queries for the navigation bar for mobile */
 
@@ -361,6 +387,14 @@ height:90%;
     .card {
         width: 250px;
     }
+
+    .footer {
+        display: none;
+    }
+
+    .footerTwo {
+        display: block;
+    }
 }
 
 @media (min-width:750px) and (max-width:850px){
@@ -386,6 +420,14 @@ height:90%;
     .card {
         width: 300px;
     }
+
+    .footer {
+        display: none;
+    }
+
+    .footerTwo {
+        display: block;
+    }
 }
 
 @media (min-width:850px) and (max-width:900px){
@@ -410,6 +452,14 @@ height:90%;
 
     .card {
         width: 300px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footerTwo {
+        display: block;
     }
 }
 /* @media queries for the navigation bar for tablet */
