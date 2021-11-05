@@ -284,10 +284,10 @@
     width: 300px; }
 
   .footer {
-    display: none; }
+    display: none;}
 
   .footerTwo {
-    display: block; } }
+    display: block;} }
 /* @media queries for the navigation bar for mobile */
 /* @media queries for the navigation bar for tablet */
 @media (min-width: 900px) and (max-width: 1300px) {

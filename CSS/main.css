@@ -510,6 +510,12 @@ body {
   display: flex;
   justify-content: space-evenly; 
 }
+.libFilmContainer {
+  height: auto;
+  float: left;
+  display: flex;
+  justify-content: space-evenly; 
+}
 
 @media (min-width: 900px) and (max-width: 1300px) {
   .titleContainer {
@@ -568,8 +574,9 @@ body {
 .filmCard {
   height: 60vh;
   float: left;
-  width: 225px; }
-
+  width: 225px; 
+  margin-bottom:50px;
+}
 .filmImg {
   height: 90%;
   background-color: white;
