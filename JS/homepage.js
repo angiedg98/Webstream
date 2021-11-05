@@ -49,6 +49,8 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 }
 
 
+
+
 const recUrl = "https://api.themoviedb.org/3/movie/popular?api_key=2c3622354ef28af5d4c657f69a9f48b6&language=en-US&page=1"
     $.getJSON(recUrl, function(result) {
         
@@ -61,7 +63,25 @@ const recUrl = "https://api.themoviedb.org/3/movie/popular?api_key=2c3622354ef28
                             </div>`
                             $(".recFilmContainer").append(filmCard);
         };
+        console.log(result.results);
+    });
+
+
+
+    const libUrl = "https://api.themoviedb.org/3/movie/popular?api_key=2c3622354ef28af5d4c657f69a9f48b6&language=en-US&page=1"
+    $.getJSON(libUrl, function(result) {
+        
+        for(var i = 0; i < 150; i++){
+            var filmCard = `<div class="col-5 col-md-4 col-lg-3 filmCard">
+                                <div class="filmImg"><img src="https://image.tmdb.org/t/p/original`+result.results[i].poster_path+` " height="100%" width="100%"></div>
+                                <div class="filmTitle">
+                                    <p>`+result.results[i].title+`</p>
+                                </div>
+                            </div>`
+                            $(".libFilmContainer").append(filmCard);
+        };
     });
 });
+
 
 
