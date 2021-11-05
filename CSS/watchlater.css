@@ -109,7 +109,7 @@
 /* END NAVIGATION BAR */
 .page-container {
   width: 100%;
-  height: 92vh;
+  height: 1000px;
   background-color: #222c25; }
 
 .page {
@@ -169,18 +169,19 @@
 
 .footer {
   background-color: #222c25;
-  height: 20vh;
-  position: relative; }
+  height: auto;
+  position: fixed; }
 
 .footerTwo {
   background-color: #222c25;
-  height: 20vh;
-  position: relative; }
+  height: auto;
+  position: fixed; }
 
 .footerBlock {
   height: 100%;
   float: left;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .social img {
   padding: 20px;
